@@ -1,0 +1,31 @@
+@media (width <= 2200px)  {
+    .card {
+        width: 320px !important;
+        border-radius: 10px;
+        height: 260px;
+        position: relative;
+        color: white;
+        box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+        transition: box-shadow .3s ease-in-out;
+    }
+}
+@media (width <= 750px) {
+
+    .containercards {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 330px !important;
+        border-radius: 10px;
+        height: 260px;
+        position: relative;
+        color: white;
+        box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+        transition: box-shadow .3s ease-in-out;
+    }
+}
+

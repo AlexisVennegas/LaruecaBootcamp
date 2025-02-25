@@ -1,0 +1,291 @@
+.container-principal {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+}
+
+.opciones-container {
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.opciones-container>h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 160px;
+    margin-left: 70px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.container-titleUno>h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 15vw;
+    margin-left: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.container-titleDos>h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 160px;
+    margin-left: 70px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container-titleTres>h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 160px;
+    margin-left: 70px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.imagen-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloUno {
+    color: #fff;
+    animation-duration: 2s;
+    animation-name: animation;
+    transition: .2s;
+}
+
+.tituloDos {
+    color: #f08E26;
+}
+
+.tituloTres {
+    color: #F34470;
+}
+
+.tituloCuatro {
+    color: #fff;
+    transition: .2s;
+    margin-left: 150px !important;
+}
+
+.titlecinco {
+    color: #f08E26;
+    transition: .2s;
+    margin-left: 150px !important;
+}
+
+.titleseis {
+    color: #F34470;
+    transition: .2s;
+    margin-left: 150px !important;
+}
+
+.titulo-v {
+    display: none;
+    transition: .2s;
+}
+
+.imagePerfil {
+    width: 49vw;
+    opacity: .2;
+    position: fixed;
+    top: -82px;
+    z-index: 1;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+.container-titleUno > h2 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 23vw;
+    margin-left: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;   
+    display: none ;     
+}
+
+
+/* Responsive   */
+
+
+@media (width <= 800px) {
+    .container-titleUno > h1 {
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 15vw;
+        margin-left: 100px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: .2s;   
+        display: none !important;     
+    }
+    .container-titleUno > h2 {
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 23vw;
+        margin-left: 100px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: .2s;   
+        display: block ;     
+    }
+}
+
+
+
+@media (width <= 800px) {
+    
+    .container-titleUno > h1 {
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 130px;
+        font-weight: 800;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .container-principal {
+        background-color: black;
+        display: flex;
+        height: 100%;
+    }
+    .opciones-container {
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 20px;
+    }
+    .tituloCuatro {
+        color: #fff;
+        transition: .2s;
+        margin-left: 30px !important;
+    }
+    .titlecinco {
+        color: #f08E26;
+        transition: .2s;
+        margin-left: 30px !important;
+    }
+    .titleseis {
+        color: #F34470;
+        transition: .2s;
+        margin-left: 30px !important;
+    }
+   
+}
+@media (width <= 400px) {
+          
+    .container-titleUno > h1 {
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 100px;
+        font-weight: 800;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .opciones-container {
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        padding: 20px 20px;
+        justify-content: center;
+    }
+}
+
+@media (width <= 600px) {
+    .imagePerfil {
+        width: 172vw;
+        opacity: .2;
+        position: fixed;
+        top: 0px !important;
+        z-index: 1;
+    }
+}
+
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom .8s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-in-bottom .8s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.puff-in-center {
+    -webkit-animation: puff-in-center 1s cubic-bezier(.47, 0.000, .745, .715) both;
+    animation: puff-in-center 1s cubic-bezier(.47, 0.000, .745, .715) both;
+    position: fixed;
+    right: -35px;
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}

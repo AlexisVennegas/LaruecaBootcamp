@@ -1,0 +1,25 @@
+@import url(./Style/Section.css);
+@import url(./Style/Works.css);
+@import url(./Style/Portal.css);
+@import url(./Style/ButtonHome.css);
+@import url(./Style/About.css);
+@import url(./Style/Frame.css);
+@import url(./Style/Cards.css);
+@import url(./Style/Contact.css);
+@import url(./Style/Modal.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+  background-color: #000 !important;
+}
+
+p::selection, h1::selection, input::selection, label::selection, span::selection, img::selection, h2::selection, li::selection {
+ background-color: white;
+ opacity: 0;
+}

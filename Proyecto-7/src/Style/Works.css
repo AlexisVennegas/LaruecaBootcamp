@@ -1,0 +1,183 @@
+@import url(./MQ/MediaQWorks.css);
+
+.Works-page-container {
+    width: 100%;
+    height:762px;
+    
+}
+.Works-page-container > h1 {
+        font-size: 50px;
+    color: white;
+    /* margin: 32px 197px; */
+    text-align: center;
+    font-weight: 800;
+
+}
+.Fathertitle {
+    font-size: 50px;
+    color: white;
+
+    text-align: center;
+    font-weight: 800;
+
+}
+
+
+.content-title-project {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 11px;
+    font-size: 37px;
+    color: white;
+}
+.content-info-project-show {
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+}
+
+.button_close {
+    font-size: 20px;
+}
+.button_close:hover {
+    font-size: 20px;
+    color: red;
+    transition: .4s;
+}
+.title {
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.content-info-project {
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.title-project {
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+   
+}
+.button-despl-info {
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.button-despl-info:hover {
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 50%;
+    padding: 5px 3px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+
+
+.work-one {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.work-uno {
+    width: 100%;
+    cursor: pointer;
+}
+
+.emoji-flecha {
+    font-size: 29px;
+    margin-right: 10px;
+}
+.iconWeb {
+    font-size: 25px; 
+    color: black;
+}
+
+.AfroBook, .DogCat, .GeekyGram, .music-io, .SuperMarket {
+    font-family: 'Gemunu Libre', sans-serif;
+ 
+    width: 42%;
+    font-size: 33px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    font-weight: 800;
+    transition: .1s;
+}
+
+.AfroBook {
+    color: #dd59d0;
+}
+.DogCat {
+    color: #FF5757;
+}
+.GeekyGram {
+    color: #FF416C;
+}
+.music-io {
+    color: #fff;
+}
+.SuperMarket {
+    color: orange;
+}
+
+.AfroBook:hover, .DogCat:hover, .GeekyGram:hover, .music-io:hover, .SuperMarket:hover {
+    padding-left: 50px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.containerindiv{
+    top: 29px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    width: 22%;
+    z-index: 300;
+    height: 8%;
+    margin: 0 auto;
+    transition: .3s;
+    display: none;
+}
+
+.containerindiv-v {
+    display: block;
+    transition: .3s;
+}
+
+
+
+
+
+.prueba {
+    border: 1px solid white;
+    width: 30%;
+}
+.containercards {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.pruebaasd {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    margin: 40px 0 ;
+}
+
+.iconSkills {
+    margin: 0 5px;
+    font-size: 25px;
+}
