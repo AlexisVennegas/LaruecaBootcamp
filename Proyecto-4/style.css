@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+    background-image: url(https://img.freepik.com/vector-gratis/ilustracion-realista-proceso-juego-mano-piedra-papel-tijera-aislado_1284-33349.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-position: -150px -200px;
+}
+
+#opcion {
+    font-size: 80px;
+    color: rgb(126, 6, 6);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+    opacity: .8;
+}
+
+.hola {
+    background-color: gray;
+    color: rgb(126, 6, 6);
+    width: 200px;
+    height: 60px;
+    font-size: 50px;
+}
+
+.hola:hover {
+    color: gray;
+    background-color: rgb(126, 6, 6);
+}
+

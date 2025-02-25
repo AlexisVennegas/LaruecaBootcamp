@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Piedra, Papel, Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<select id="opcion">
+		<option value="piedra">Piedra</option>
+		<option value="papel">Papel</option>
+		<option value="tijera">Tijera</option>
+	</select>
+	<br>
+	<br>
+	<button class="hola" onclick="comprobar()">Prueba</button>
+	<script>
+		function comprobar(){
+			var opcionElegida = opcion.value;
+			var opcionMaquina = eleccionMaquina();
+		
+			var resultado = "Empate"
+
+
+			//Comparación
+
+			if(opcionElegida == "papel" && opcionMaquina == "piedra"){
+				resultado = "GANAS";
+			}
+			else if(opcionElegida == "papel" && opcionMaquina == "tijera"){
+				resultado = "PIERDES";
+			}
+			else if(opcionElegida == "papel" && opcionMaquina == "papel"){
+				resultado = "EMPATE"
+			}
+
+
+
+			if(opcionElegida == "piedra" && opcionMaquina == "piedra"){
+				resultado = "Empate";
+			}
+			else if(opcionElegida == "piedra" && opcionMaquina == "tijera"){
+				resultado = "GANAS";
+			}
+			else if(opcionElegida == "piedra" && opcionMaquina == "papel"){
+				resultado = "Pierdes"
+			}
+
+
+			if(opcionElegida == "tijera" && opcionMaquina == "piedra"){
+				resultado = "Pierdes";
+			}
+			else if(opcionElegida == "tijera" && opcionMaquina == "tijera"){
+				resultado = "empata";
+			}
+			else if(opcionElegida == "tijera" && opcionMaquina == "papel"){
+				resultado = "Ganas"
+			}
+
+			var  mensaje;
+
+			mensaje ="la maquina eligió" + " " + opcionMaquina + " Asi que...\r\n" + resultado;
+
+			alert(mensaje);
+
+
+			//AQUÍ EMPIEZA TU CÓDIGO
+		}
+
+
+
+		
+
+
+
+
+
+
+
+
+
+		/*ESTA PARTE LA PUEDES IGNORAR*/
+		function eleccionMaquina(){
+			let opciones = ["piedra","papel","tijera"];
+			return opciones[Math.floor(Math.random() * 3)];
+		}
+	</script>
+</body>
+</html>
